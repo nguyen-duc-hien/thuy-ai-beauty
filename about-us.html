@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>About Us</title>
     <!-- taildwind css import -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/assets/js/tailwind.config.js"></script>
@@ -32,7 +32,7 @@
     <header>
         <div class="header">
             <!-- header pc -->
-            <div class="header-pc header-home hidden lg:block fixed top-0 w-full z-[5]">
+            <div class="header-pc hidden lg:block fixed top-0 w-full z-[5]">
                 <div class="container flex items-center justify-between py-6 gap-10">
                     <a href="/">
                         <figure class="max-w-[118px]"><img src="/assets/image/header-logo.svg" alt="logo"></figure>
@@ -40,25 +40,25 @@
                     <nav class="">
                         <ul class="flex items-center justify-between gap-4 2xl:gap-10">
                             <li class="text-body-lg-bold">
-                                <a href="#" class="link-nav home">Products</a>
+                                <a href="#" class="link-nav">Products</a>
                             </li>
                             <li class="text-body-lg-bold">
-                                <a href="#" class="link-nav home">Promotions</a>
+                                <a href="#" class="link-nav">Promotions</a>
                             </li>
                             <li class="text-body-lg-bold">
-                                <a href="#" class="link-nav home">About us</a>
+                                <a href="#" class="link-nav">About us</a>
                             </li>
                             <li class="text-body-lg-bold">
-                                <a href="#" class="link-nav home">Skincare Tips</a>
+                                <a href="#" class="link-nav">Skincare Tips</a>
                             </li>
                             <li class="text-body-lg-bold">
-                                <a href="#" class="link-nav home">Blogs</a>
+                                <a href="#" class="link-nav">Blogs</a>
                             </li>
                             <li class="text-body-lg-bold">
-                                <a href="#" class="link-nav home">FAQs</a>
+                                <a href="#" class="link-nav">FAQs</a>
                             </li>
                             <li class="text-body-lg-bold">
-                                <a href="#" class="link-nav home">Contact us</a>
+                                <a href="#" class="link-nav">Contact us</a>
                             </li>
                         </ul>
                     </nav>
@@ -66,7 +66,7 @@
                 </div>
             </div>
             <!-- header-mobile -->
-            <div class="w-full lg:hidden header-mobile fixed top-0 z-[5] ">
+            <div class="w-full lg:hidden header-mobile fixed top-0 z-[5]">
                 <div class="container flex justify-between py-5">
                     <a href="/">
                         <div class="logo">
@@ -176,214 +176,58 @@
     </header>
     <main>
         <!-- -------------------- section 1 -------------------- -->
-        <style>
-            .ss-1-bg {
-                position: relative;
-                height: 100vh;
-                max-height: 972px;
-                background: url(/assets/image/home-banner.png) no-repeat;
-                background-size: cover;
-                background-position: 92% center;
-            }
-
-            /* .ss-1-bg::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: 0;
-                background: linear-gradient(270deg, rgba(4, 20, 66, 0.00) 31.65%, #041442 97%);
-            } */
-        </style>
-        <section class="ss-1-bg">
-            <div class="container relative flex flex-col w-full h-full justify-center ">
-                <div class="flex flex-col gap-4 max-w-full lg:max-w-[58%] relative z-[2]">
-                    <h1 class="text-heading-h1 text-primary">Radiate Your Beauty
-                    </h1>
-                    <p class="text-body-3xl-medium text-neutralc-50">Beauty Begins with Skincare</p>
-                    <a href="#" class="button mt-8">Learn more</a>
-                </div>
+        <!-- place header -->
+        <section class="h-[100px] lg:h-[166px]"></section>
+        <section class="pt-10">
+            <div class="container">
+                <h1 class="text-heading-h1 lg:text-[80px] text-neutralc-900">
+                    About us
+                </h1>
             </div>
+            <figure class="mt-10 w-full"><img src="/assets/image/about-s1-img.png" alt="img"></figure>
         </section>
         <!-- -------------------- section 2 -------------------- -->
-        <section class="py-10 lg:pt-[120px] lg:pb-[100px]">
-            <div class="container flex flex-col gap-10 lg:gap-14">
-                <div class="flex flex-col gap-2 justify-center items-center">
-                    <h2 class="text-heading-h1 text-primary text-center">
-                        Discover our products
-                    </h2>
-                    <p class="text-body-3xl-medium text-neutralc-800 text-center">Your Favorites, Redefined</p>
-                </div>
-                <!-- Slider main container -->
-                <div id="home-swiper" class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <style>
-                            /* background sẽ thay đổi dựa trên sản phẩm */
-                            .bg-item-1 {
-                                border-radius: 24px;
-                                background: #C8C8C8 url("./assets/image/home-s2-img.png") no-repeat center/cover;
-                            }
-                        </style>
-                        <div class="swiper-slide">
-                            <!-- background sẽ thay đổi dựa trên sản phẩm -->
-                            <div
-                                class="flex justify-center min-h-[520px] lg:min-h-[650px] bg-item-1 pt-6 lg:pt-10 xl:pt-16">
-                                <div class="w-[90%] lg:max-w-[494px] flex flex-col items-center">
-                                    <h2 class="text-body-3xl-bold text-neutralc-900 text-center">
-                                        Ai Beauty Anti-Melasa Skincare Cream
-                                    </h2>
-                                    <p class="mt-2 text-body-md-regular text-neutralc-700 text-center">
-                                        Nourish and moisturize the skin, reduce the appearance of dark spots,
-                                        pigmentation, freckles, and age spots
-                                    </p>
-                                    <a href="#" class="button mt-4 md:mt-6">Learn more</a>
-                                </div>
-                            </div>
+        <section class="py-10 lg:py-[120px]">
+            <div class="container">
+                <h2 class="text-heading-h1 text-primary text-center">Our Mission & Philosophy</h2>
+                <div class="mt-10 lg:mt-[72px] grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+                    <div class="flex flex-col gap-6 lg:gap-10">
+                        <div class="">
+                            <p class="text-body-xl-bold text-primary uppercase">OUR MISSION</p>
+                            <p class="mt-1 text-heading-h4 text-[34px] text-neutralc-900">Radiate Your Beauty</p>
+                            <p class="mt-4 text-body-md-regular text-neutralc-600">At AI Beauty, we believe that
+                                skincare is
+                                more than just a routine — it’s a form of self-care and confidence. Our
+                                mission is to create high-quality, effective, and safe skincare products that nourish
+                                your skin and enhance your natural
+                                beauty.
+                            </p>
                         </div>
-                        <div class="swiper-slide">
-                            <!-- background sẽ thay đổi dựa trên sản phẩm -->
-                            <div
-                                class="flex justify-center min-h-[520px] lg:min-h-[650px] bg-item-1 pt-6 lg:pt-10 xl:pt-16">
-                                <div class="w-[90%] lg:max-w-[494px] flex flex-col items-center">
-                                    <h2 class="text-body-3xl-bold text-neutralc-900 text-center">
-                                        Ai Beauty Anti-Melasa Skincare Cream
-                                    </h2>
-                                    <p class="mt-2 text-body-md-regular text-neutralc-700 text-center">
-                                        Nourish and moisturize the skin, reduce the appearance of dark spots,
-                                        pigmentation, freckles, and age spots
-                                    </p>
-                                    <a href="#" class="button mt-4 md:mt-6">Learn more</a>
-                                </div>
-                            </div>
-                        </div>
+                        <figure class="overflow-hidden rounded-3xl"><img src="/assets/image/about-s2-img.png" alt="img">
+                        </figure>
                     </div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="flex flex-col-reverse gap-6 lg:gap-10">
+                        <div class="">
+                            <p class="text-body-xl-bold text-primary uppercase">OUR MISSION</p>
+                            <p class="mt-1 text-heading-h4 text-[34px] text-neutralc-900">Radiate Your Beauty</p>
+                            <p class="mt-4 text-body-md-regular text-neutralc-600">At AI Beauty, we believe that
+                                skincare is
+                                more than just a routine — it’s a form of self-care and confidence. Our
+                                mission is to create high-quality, effective, and safe skincare products that nourish
+                                your skin and enhance your natural
+                                beauty.
+                            </p>
+                        </div>
+                        <figure class="overflow-hidden rounded-3xl"><img src="/assets/image/about-s2-img.png" alt="img">
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- -------------------- section 3 -------------------- -->
-        <section class="py-10 lg:pt-10 lg:pb-[100px]">
-            <div class="container flex flex-col gap-10 lg:gap-14">
-                <div class="flex flex-wrap gap-4 lg:gap-10 justify-between">
-                    <div class="flex flex-col gap-2 ">
-                        <h2 class="text-heading-h1 text-primary">
-                            Best sellers
-                        </h2>
-                        <p class="text-body-3xl-medium text-neutralc-800">Your Favorites, Redefined</p>
-                    </div>
-
-                    <div class="swiper-button-container min-h-16 gap-4">
-                        <!-- If we need navigation buttons -->
-                        <div class="relative swiper-button-prev"></div>
-                        <div class="relative swiper-button-next"></div>
-                    </div>
-                </div>
-                <!-- Slider main container -->
-                <div id="home-best-seller" class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="flex flex-col figure-hover rounded-2xl bg-[#EAEDF2]">
-                                <figure class="w-full"><img src="/assets/image/home-s3-img.png" alt="img">
-                                </figure>
-                                <div class="flex flex-col gap-8 p-4 lg:p-8">
-                                    <div class="flex flex-col gap-4">
-                                        <h2 class="text-body-3xl-bold text-neutralc-900">
-                                            Ai Beauty Anti-Melasa Skincare Cream
-                                        </h2>
-                                        <p class="text-body-md-regular text-neutralc-700">
-                                            Nourish and moisturize the skin, reduce the appearance of dark spots,
-                                            pigmentation, freckles, and age spots
-                                        </p>
-                                    </div>
-                                    <div class="flex gap-4 items-center justify-between">
-                                        <p class="text-body-3xl-bold text-neutralc-800">$48.00 USD</p>
-                                        <a href="#" class="button">Learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="flex flex-col figure-hover rounded-2xl bg-[#EAEDF2]">
-                                <figure class="w-full h-[263px]"><img src="/assets/image/home-s3-img.png" alt="img">
-                                </figure>
-                                <div class="flex flex-col gap-8 p-4 lg:p-8">
-                                    <div class="flex flex-col gap-4">
-                                        <h2 class="text-body-3xl-bold text-neutralc-900">
-                                            Ai Beauty Anti-Melasa Skincare Cream
-                                        </h2>
-                                        <p class="text-body-md-regular text-neutralc-700">
-                                            Nourish and moisturize the skin, reduce the appearance of dark spots,
-                                            pigmentation, freckles, and age spots
-                                        </p>
-                                    </div>
-                                    <div class="flex gap-4 items-center justify-between">
-                                        <p class="text-body-3xl-bold text-neutralc-800">$48.00 USD</p>
-                                        <a href="#" class="button">Learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="flex flex-col figure-hover rounded-2xl bg-[#EAEDF2]">
-                                <figure class="w-full h-[263px]"><img src="/assets/image/home-s3-img.png" alt="img">
-                                </figure>
-                                <div class="flex flex-col gap-8 p-4 lg:p-8">
-                                    <div class="flex flex-col gap-4">
-                                        <h2 class="text-body-3xl-bold text-neutralc-900">
-                                            Ai Beauty Anti-Melasa Skincare Cream
-                                        </h2>
-                                        <p class="text-body-md-regular text-neutralc-700">
-                                            Nourish and moisturize the skin, reduce the appearance of dark spots,
-                                            pigmentation, freckles, and age spots
-                                        </p>
-                                    </div>
-                                    <div class="flex gap-4 items-center justify-between">
-                                        <p class="text-body-3xl-bold text-neutralc-800">$48.00 USD</p>
-                                        <a href="#" class="button">Learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="flex flex-col figure-hover rounded-2xl bg-[#EAEDF2]">
-                                <figure class="w-full h-[263px]"><img src="/assets/image/home-s3-img.png" alt="img">
-                                </figure>
-                                <div class="flex flex-col gap-8 p-4 lg:p-8">
-                                    <div class="flex flex-col gap-4">
-                                        <h2 class="text-body-3xl-bold text-neutralc-900">
-                                            Ai Beauty Anti-Melasa Skincare Cream
-                                        </h2>
-                                        <p class="text-body-md-regular text-neutralc-700">
-                                            Nourish and moisturize the skin, reduce the appearance of dark spots,
-                                            pigmentation, freckles, and age spots
-                                        </p>
-                                    </div>
-                                    <div class="flex gap-4 items-center justify-between">
-                                        <p class="text-body-3xl-bold text-neutralc-800">$48.00 USD</p>
-                                        <a href="#" class="button">Learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- -------------------- section 4 -------------------- -->
         <style>
-            .ss-4-bg {
+            .ss-3-bg {
                 position: relative;
                 min-height: 165vh;
                 background: url(/assets/image/home-s4-bg.png) no-repeat;
@@ -391,7 +235,7 @@
                 background-position: center;
             }
         </style>
-        <section class="ss-4-bg flex flex-col justify-between">
+        <section class="ss-3-bg flex flex-col justify-between">
             <div class="container py-10 lg:py-[80px]">
                 <div class="flex items-center justify-center">
                     <h1 class="text-heading-h1 text-primary text-center">Why choose us
@@ -399,9 +243,9 @@
                 </div>
             </div>
             <div class="container py-10 lg:py-[80px]">
-                <div class="max-w-[1263px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
-                    <div class="why-choose-wrap figure-hover rounded-2xl">
-                        <div class="why-choose-item">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="why-choose-wrap about figure-hover rounded-2xl">
+                        <div class="why-choose-item row">
                             <div class="context">
                                 <h2 class="text-heading-h4 text-neutralc-800">
                                     Premium <br>
@@ -415,8 +259,8 @@
                             </figure>
                         </div>
                     </div>
-                    <div class="why-choose-wrap figure-hover rounded-2xl">
-                        <div class="why-choose-item">
+                    <div class="why-choose-wrap about figure-hover rounded-2xl">
+                        <div class="why-choose-item row">
                             <div class="context">
                                 <h2 class="text-heading-h4 text-neutralc-800">
                                     Gentle & <br>
@@ -430,8 +274,23 @@
                             </figure>
                         </div>
                     </div>
-                    <div class="why-choose-wrap figure-hover rounded-2xl">
-                        <div class="why-choose-item">
+                    <div class="why-choose-wrap about figure-hover rounded-2xl">
+                        <div class="why-choose-item row">
+                            <div class="context">
+                                <h2 class="text-heading-h4 text-neutralc-800">
+                                    Premium <br>
+                                    Ingredients
+                                </h2>
+                                <p class="text-body-md-regular text-neutralc-700 truncate-2row">
+                                    Formulated with high-quality, natural extracts and scientifically proven actives.
+                                </p>
+                            </div>
+                            <figure class="w-full"><img src="/assets/image/home-s4-img.png" alt="img">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="why-choose-wrap about figure-hover rounded-2xl">
+                        <div class="why-choose-item row">
                             <div class="context">
                                 <h2 class="text-heading-h4 text-neutralc-800">
                                     Premium <br>
@@ -448,412 +307,47 @@
                 </div>
             </div>
         </section>
-        <!-- -------------------- section 5 -------------------- -->
-
-        <section class="py-10 lg:py-[100px]">
-            <div class="container">
-                <h2 class="text-heading-h1 text-primary text-center">What our customers are saying</h2>
-            </div>
-            <div id="review-swiper" class="swiper lg:max-w-[1920px] mt-10 lg:mt-16">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper pb-10">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="slide-active relative max-w-[846px] pt-8">
-                            <figure class="relative">
-                                <img src="./assets/image/home-5-img.png" class="rounded-2xl" alt="img">
-                            </figure>
-                            <div
-                                class="review-wrap review-context hidden w-full md:w-[90%] lg:w-[80%] rounded-3xl mx-auto">
-                                <div class="review-item py-5 px-9 flex flex-col items-center justify-center gap-3">
-                                    <h2 class="text-body-lg-bold text-neutralc-800 text-center">
-                                        A Game-Changer for My Skin!
-                                    </h2>
-                                    <p
-                                        class="text-body-md-regular text-neutralc-700 min-h-3lh truncate-3row text-center">
-                                        "I've struggled with dark spots and uneven skin tone for years, but the AI
-                                        Beauty Brightening Serum has completely
-                                        transformed my complexion. My skin looks radiant and feels so much smoother.
-                                        Highly recommend!"
-                                    </p>
-                                    <p class="text-body-lg-bold text-neutralc-800 text-center">
-                                        — Emily T.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="slide-active relative max-w-[846px] pt-8">
-                            <figure class="relative">
-                                <img src="./assets/image/home-5-img.png" class="rounded-2xl" alt="img">
-                            </figure>
-                            <div
-                                class="review-wrap review-context hidden w-full md:w-[90%] lg:w-[80%] rounded-3xl mx-auto">
-                                <div class="review-item py-5 px-9 flex flex-col items-center justify-center gap-3">
-                                    <h2 class="text-body-lg-bold text-neutralc-800 text-center">
-                                        A Game-Changer for My Skin!
-                                    </h2>
-                                    <p
-                                        class="text-body-md-regular text-neutralc-700 min-h-3lh truncate-3row text-center">
-                                        "I've struggled with dark spots and uneven skin tone for years, but the AI
-                                        Beauty Brightening Serum has completely
-                                        transformed my complexion. My skin looks radiant and feels so much smoother.
-                                        Highly recommend!"
-                                    </p>
-                                    <p class="text-body-lg-bold text-neutralc-800 text-center">
-                                        — Emily T.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="slide-active relative max-w-[846px] pt-8">
-                            <figure class="relative">
-                                <img src="./assets/image/home-5-img.png" class="rounded-2xl" alt="img">
-                            </figure>
-                            <div
-                                class="review-wrap review-context hidden w-full md:w-[90%] lg:w-[80%] rounded-3xl mx-auto">
-                                <div class="review-item py-5 px-9 flex flex-col items-center justify-center gap-3">
-                                    <h2 class="text-body-lg-bold text-neutralc-800 text-center">
-                                        A Game-Changer for My Skin!
-                                    </h2>
-                                    <p
-                                        class="text-body-md-regular text-neutralc-700 min-h-3lh truncate-3row text-center">
-                                        "I've struggled with dark spots and uneven skin tone for years, but the AI
-                                        Beauty Brightening Serum has completely
-                                        transformed my complexion. My skin looks radiant and feels so much smoother.
-                                        Highly recommend!"
-                                    </p>
-                                    <p class="text-body-lg-bold text-neutralc-800 text-center">
-                                        — Emily T.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="slide-active relative max-w-[846px] pt-8">
-                            <figure class="relative">
-                                <img src="./assets/image/home-5-img.png" class="rounded-2xl" alt="img">
-                            </figure>
-                            <div
-                                class="review-wrap review-context hidden w-full md:w-[90%] lg:w-[80%] rounded-3xl mx-auto">
-                                <div class="review-item py-5 px-9 flex flex-col items-center justify-center gap-3">
-                                    <h2 class="text-body-lg-bold text-neutralc-800 text-center">
-                                        A Game-Changer for My Skin!
-                                    </h2>
-                                    <p
-                                        class="text-body-md-regular text-neutralc-700 min-h-3lh truncate-3row text-center">
-                                        "I've struggled with dark spots and uneven skin tone for years, but the AI
-                                        Beauty Brightening Serum has completely
-                                        transformed my complexion. My skin looks radiant and feels so much smoother.
-                                        Highly recommend!"
-                                    </p>
-                                    <p class="text-body-lg-bold text-neutralc-800 text-center">
-                                        — Emily T.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination gray-1 mt-0"></div>
-                <!-- If we need navigation -->
-                <div class="swiper-button-next opacity-50"></div>
-                <div class="swiper-button-prev opacity-50"></div>
-            </div>
-        </section>
-
-        <!-- -------------------- section 6 -------------------- -->
+        <!-- -------------------- section 4 -------------------- -->
         <style>
-            .ss6-bg {
-                background: url('./assets/image/home-s6-bg.png') no-repeat center/cover;
+            .bg-ss4-about {
+                position: relative;
+                background: url("/assets/image/about-s4-bg.png") no-repeat center/cover;
+            }
+
+            .bg-ss4-about:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.56);
+                z-index: 0;
             }
         </style>
-
-        <section class="ss6-bg lg:h-[100vh] lg:max-h-[800px] flex flex-col lg:flex-row relative">
-            <h2 class="hidden lg:block text-heading-h1 text-primary absolute top-20 left-[10%] z-[3]">Skin care tip</h2>
-
-            <div class="action-col">
-                <div class="action-content">
-                    <h2 class="title-item text-heading-h4">
-                        #1
-                    </h2>
-                    <h2 class="title-item mt-6 text-body-3xl-bold">
-                        The Foundation of Healthy Skin
-                    </h2>
-                    <div class="sub-items">
-                        <span class="mt-4 text-body-md-regular text-white">
-                            Keeping your skin hydrated is essential for maintaining its elasticity and glow. Dehydrated
-                            skin can appear dull and
-                            even lead to premature fine lines. Start with the basics: drink plenty of water throughout
-                            the day, eat hydrating fruits
-                            like watermelon and cucumber, and use a quality moisturizer. Hydration doesn’t just come
-                            from within—your skincare
-                            products matter, too.
-                        </span>
-                    </div>
+        <section class="bg-ss4-about">
+            <div class="container relative z-[2] py-10 lg:py-[96px]">
+                <div class="mx-auto lg:max-w-[868px]">
+                    <h2 class="text-heading-h1 text-primary text-center">Our Commitment to You</h2>
+                    <p class="mt-5 text-body-lg-regular text-neutralc-50 text-center">We are dedicated to helping you
+                        achieve
+                        healthier, glowing skin with products that you can trust. Whether you’re looking
+                        for hydration, brightening, or anti-aging solutions, AI Beauty is here to support your skincare
+                        journey.</p>
+                    <a href="#" class="mt-10 lg:mt-[100px] text-heading-h4 link-light">
+                        Join us and embrace radiant, confident skin—every day
+                    </a>
                 </div>
             </div>
-            <div class="action-col">
-                <div class="action-content">
-                    <h2 class="title-item text-heading-h4">
-                        #1
-                    </h2>
-                    <h2 class="title-item mt-6 text-body-3xl-bold">
-                        The Foundation of Healthy Skin
-                    </h2>
-                    <div class="sub-items">
-                        <span class="mt-4 text-body-md-regular text-white">
-                            Keeping your skin hydrated is essential for maintaining its elasticity and glow. Dehydrated
-                            skin can appear dull and
-                            even lead to premature fine lines. Start with the basics: drink plenty of water throughout
-                            the day, eat hydrating fruits
-                            like watermelon and cucumber, and use a quality moisturizer. Hydration doesn’t just come
-                            from within—your skincare
-                            products matter, too.
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="action-col">
-                <div class="action-content">
-                    <h2 class="title-item text-heading-h4">
-                        #1
-                    </h2>
-                    <h2 class="title-item mt-6 text-body-3xl-bold">
-                        The Foundation of Healthy Skin
-                    </h2>
-                    <div class="sub-items">
-                        <span class="mt-4 text-body-md-regular text-white">
-                            Keeping your skin hydrated is essential for maintaining its elasticity and glow. Dehydrated
-                            skin can appear dull and
-                            even lead to premature fine lines. Start with the basics: drink plenty of water throughout
-                            the day, eat hydrating fruits
-                            like watermelon and cucumber, and use a quality moisturizer. Hydration doesn’t just come
-                            from within—your skincare
-                            products matter, too.
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="action-col">
-                <div class="action-content">
-                    <h2 class="title-item text-heading-h4">
-                        #1
-                    </h2>
-                    <h2 class="title-item mt-6 text-body-3xl-bold">
-                        The Foundation of Healthy Skin
-                    </h2>
-                    <div class="sub-items">
-                        <span class="mt-4 text-body-md-regular text-white">
-                            Keeping your skin hydrated is essential for maintaining its elasticity and glow. Dehydrated
-                            skin can appear dull and
-                            even lead to premature fine lines. Start with the basics: drink plenty of water throughout
-                            the day, eat hydrating fruits
-                            like watermelon and cucumber, and use a quality moisturizer. Hydration doesn’t just come
-                            from within—your skincare
-                            products matter, too.
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="action-col">
-                <div class="action-content">
-                    <h2 class="title-item text-heading-h4">
-                        #1
-                    </h2>
-                    <h2 class="title-item mt-6 text-body-3xl-bold">
-                        The Foundation of Healthy Skin
-                    </h2>
-                    <div class="sub-items">
-                        <span class="mt-4 text-body-md-regular text-white">
-                            Keeping your skin hydrated is essential for maintaining its elasticity and glow. Dehydrated
-                            skin can appear dull and
-                            even lead to premature fine lines. Start with the basics: drink plenty of water throughout
-                            the day, eat hydrating fruits
-                            like watermelon and cucumber, and use a quality moisturizer. Hydration doesn’t just come
-                            from within—your skincare
-                            products matter, too.
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    const actionCols = document.querySelectorAll(".action-col");
-
-                    actionCols.forEach((col) => {
-                        col.addEventListener("click", function (e) {
-                            if (window.innerWidth < 992) {
-                                // Bỏ class 'active' ở tất cả các action-col
-                                actionCols.forEach((item) => item.classList.remove("active"));
-
-                                // Thêm 'active' vào phần tử được click
-                                this.classList.add("active");
-
-                                // Ngăn chặn sự kiện click lan ra ngoài
-                                e.stopPropagation();
-                            }
-                        });
-                    });
-
-                    // Xóa 'active' khi click ra ngoài
-                    document.addEventListener("click", function (e) {
-                        if (window.innerWidth < 992 && !e.target.closest(".action-col")) {
-                            actionCols.forEach((item) => item.classList.remove("active"));
-                        }
-                    });
-                });
-            </script>
         </section>
+        <!-- -------------------- section 5 -------------------- -->
+
+
+        <!-- -------------------- section 6 -------------------- -->
+
 
         <!-- -------------------- section 7 -------------------- -->
-        <section class="py-10 lg:py-[100px] bg-[#F8F8F8]">
-            <div class="container">
-                <div class="flex flex-col gap-16 items-center justify-center">
-                    <h2 class="text-heading-h1 text-primary">
-                        Frequently asked questions
-                    </h2>
-                    <div class="flex flex-col gap-4 lg:max-w-[954px]">
-                        <!-- single item -->
-                        <div class="accordion-item">
-                            <div class="accordion-title">
-                                <p class="text-body-lg-semibold text-neutralc-800">How long will it take to see results?
-                                </p>
-                                <div
-                                    class="accordion-show-more flex items-center gap-1 text-body-sm-semibold text-gray-50">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                                        fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M11.5119 8.87978C11.7928 8.63903 12.2072 8.63903 12.4881 8.87978L19.4881 14.8798C19.8026 15.1493 19.839 15.6228 19.5695 15.9373C19.2999 16.2518 18.8264 16.2882 18.5119 16.0187L12 10.437L5.48811 16.0187C5.17361 16.2882 4.70014 16.2518 4.43057 15.9373C4.161 15.6228 4.19743 15.1493 4.51192 14.8798L11.5119 8.87978Z"
-                                            fill="#333333" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="accordion-content text-body-md-regular text-neutralc-600">
-                                While individual results may vary, most customers start noticing improvements within 2–4
-                                weeks of consistent use. For
-                                best results, follow your skincare routine daily.
-                            </div>
-                        </div>
-                        <!-- single item -->
-                        <div class="accordion-item">
-                            <div class="accordion-title">
-                                <p class="text-body-lg-semibold text-neutralc-800">How long will it take to see results?
-                                </p>
-                                <div
-                                    class="accordion-show-more flex items-center gap-1 text-body-sm-semibold text-gray-50">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                                        fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M11.5119 8.87978C11.7928 8.63903 12.2072 8.63903 12.4881 8.87978L19.4881 14.8798C19.8026 15.1493 19.839 15.6228 19.5695 15.9373C19.2999 16.2518 18.8264 16.2882 18.5119 16.0187L12 10.437L5.48811 16.0187C5.17361 16.2882 4.70014 16.2518 4.43057 15.9373C4.161 15.6228 4.19743 15.1493 4.51192 14.8798L11.5119 8.87978Z"
-                                            fill="#333333" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="accordion-content text-body-md-regular text-neutralc-600">
-                                While individual results may vary, most customers start noticing improvements within 2–4
-                                weeks of consistent use. For
-                                best results, follow your skincare routine daily.
-                            </div>
-                        </div>
-                        <!-- single item -->
-                        <div class="accordion-item">
-                            <div class="accordion-title">
-                                <p class="text-body-lg-semibold text-neutralc-800">How long will it take to see results?
-                                </p>
-                                <div
-                                    class="accordion-show-more flex items-center gap-1 text-body-sm-semibold text-gray-50">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                                        fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M11.5119 8.87978C11.7928 8.63903 12.2072 8.63903 12.4881 8.87978L19.4881 14.8798C19.8026 15.1493 19.839 15.6228 19.5695 15.9373C19.2999 16.2518 18.8264 16.2882 18.5119 16.0187L12 10.437L5.48811 16.0187C5.17361 16.2882 4.70014 16.2518 4.43057 15.9373C4.161 15.6228 4.19743 15.1493 4.51192 14.8798L11.5119 8.87978Z"
-                                            fill="#333333" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="accordion-content text-body-md-regular text-neutralc-600">
-                                While individual results may vary, most customers start noticing improvements within 2–4
-                                weeks of consistent use. For
-                                best results, follow your skincare routine daily.
-                            </div>
-                        </div>
-                        <!-- single item -->
-                        <div class="accordion-item">
-                            <div class="accordion-title">
-                                <p class="text-body-lg-semibold text-neutralc-800">How long will it take to see results?
-                                </p>
-                                <div
-                                    class="accordion-show-more flex items-center gap-1 text-body-sm-semibold text-gray-50">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                                        fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M11.5119 8.87978C11.7928 8.63903 12.2072 8.63903 12.4881 8.87978L19.4881 14.8798C19.8026 15.1493 19.839 15.6228 19.5695 15.9373C19.2999 16.2518 18.8264 16.2882 18.5119 16.0187L12 10.437L5.48811 16.0187C5.17361 16.2882 4.70014 16.2518 4.43057 15.9373C4.161 15.6228 4.19743 15.1493 4.51192 14.8798L11.5119 8.87978Z"
-                                            fill="#333333" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="accordion-content text-body-md-regular text-neutralc-600">
-                                While individual results may vary, most customers start noticing improvements within 2–4
-                                weeks of consistent use. For
-                                best results, follow your skincare routine daily.
-                            </div>
-                        </div>
-                        <!-- single item -->
-                        <div class="accordion-item">
-                            <div class="accordion-title">
-                                <p class="text-body-lg-semibold text-neutralc-800">How long will it take to see results?
-                                </p>
-                                <div
-                                    class="accordion-show-more flex items-center gap-1 text-body-sm-semibold text-gray-50">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                                        fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M11.5119 8.87978C11.7928 8.63903 12.2072 8.63903 12.4881 8.87978L19.4881 14.8798C19.8026 15.1493 19.839 15.6228 19.5695 15.9373C19.2999 16.2518 18.8264 16.2882 18.5119 16.0187L12 10.437L5.48811 16.0187C5.17361 16.2882 4.70014 16.2518 4.43057 15.9373C4.161 15.6228 4.19743 15.1493 4.51192 14.8798L11.5119 8.87978Z"
-                                            fill="#333333" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="accordion-content text-body-md-regular text-neutralc-600">
-                                While individual results may vary, most customers start noticing improvements within 2–4
-                                weeks of consistent use. For
-                                best results, follow your skincare routine daily.
-                            </div>
-                        </div>
-                        <!-- single item -->
-                        <div class="accordion-item">
-                            <div class="accordion-title">
-                                <p class="text-body-lg-semibold text-neutralc-800">How long will it take to see results?
-                                </p>
-                                <div
-                                    class="accordion-show-more flex items-center gap-1 text-body-sm-semibold text-gray-50">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                                        fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M11.5119 8.87978C11.7928 8.63903 12.2072 8.63903 12.4881 8.87978L19.4881 14.8798C19.8026 15.1493 19.839 15.6228 19.5695 15.9373C19.2999 16.2518 18.8264 16.2882 18.5119 16.0187L12 10.437L5.48811 16.0187C5.17361 16.2882 4.70014 16.2518 4.43057 15.9373C4.161 15.6228 4.19743 15.1493 4.51192 14.8798L11.5119 8.87978Z"
-                                            fill="#333333" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="accordion-content text-body-md-regular text-neutralc-600">
-                                While individual results may vary, most customers start noticing improvements within 2–4
-                                weeks of consistent use. For
-                                best results, follow your skincare routine daily.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
+
 
     </main>
     <footer class="footer footer-bg py-10 xl:pt-16 pb-6 xl:pb-8">
