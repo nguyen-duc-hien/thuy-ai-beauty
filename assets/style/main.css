@@ -2007,6 +2007,20 @@ hr.footer-divider {
   fill: var(--secondary);
 }
 
+.about-mission {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 992px) {
+  .about-mission {
+    gap: 24px;
+  }
+}
+.about-mission:nth-child(2n+2) {
+  flex-direction: column-reverse;
+}
+
 .skincare-item {
   display: flex;
   flex-direction: row;
