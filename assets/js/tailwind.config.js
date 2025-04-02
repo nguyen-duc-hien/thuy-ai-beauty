@@ -24,6 +24,7 @@ tailwind.config = {
         colors: {
             white: '#FFF',
             black: '#000',
+            "second-text": '#575961',
             primary: {
                 DEFAULT: "#EFC004",
                 600: '#2955D9',

@@ -507,6 +507,26 @@ select {
     }
   }
 }
+.search-box {
+  width: 100%;
+  display: flex;
+  padding: 12px 24px;
+  padding-left: 64px;
+  align-items: center;
+  gap: 16px;
+  border-radius: 12px;
+  border: 1px solid;
+  border-color: #ccc;
+  @extend .text-body-md-regular;
+  color: var(--neutral-800);
+  &::placeholder {
+    color: #666;
+  }
+  &:focus {
+    border-color: var(--primary);
+    caret-color: var(--primary);
+  }
+}
 // ----------------------- input radio, checkbox,... style -----------------------
 .custom-checkbox {
   display: flex;
@@ -538,7 +558,7 @@ select {
     width: 24px;
     height: 24px;
     background-color: #fff;
-    border: 2px solid #d0d5dd;
+    border: 2px solid #888994;
     border-radius: 6px; // Bo góc
     position: relative;
     transition: background-color 0.3s ease;
@@ -753,6 +773,12 @@ hr {
     height: 1px;
     border: none;
     background: #e6e6e6;
+  }
+  &.divider-ccc {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: #ccc;
   }
   &.divider-v-6 {
     width: 1px;
@@ -1366,6 +1392,20 @@ hr {
   }
 }
 
+.countdown {
+  &-container {
+    display: flex;
+    align-items: center;
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
 .cta {
   &-container {
     width: 100%;
@@ -1756,6 +1796,24 @@ hr {
   //   }
   // }
 }
+.product {
+  &-item {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    background: #eaedf2;
+    figure {
+      max-height: 205px;
+      img {
+        min-width: 100%;
+      }
+    }
+  }
+  &-container {
+    padding: 32px;
+  }
+}
 .blog {
   &-item {
     overflow: hidden;
@@ -1872,6 +1930,9 @@ hr {
           @media (max-width: 992px) {
             max-height: 470px;
           }
+          @media (max-width: 768px) {
+            max-height: 390px;
+          }
         }
       }
     }
@@ -1922,4 +1983,36 @@ hr {
       }
     }
   }
+}
+
+// product collapse sort
+.collapse-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.collapse-item {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 125rem;
+  transition: all 0.5s ease;
+
+  &.collapsed {
+    max-height: 0;
+    overflow: hidden;
+  }
+}
+
+.check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.collapse-button,
+.collapse-check-button {
+  transition: all 0.5s ease;
 }
